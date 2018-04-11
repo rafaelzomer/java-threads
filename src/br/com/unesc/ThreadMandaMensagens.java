@@ -25,6 +25,8 @@ public class ThreadMandaMensagens extends Thread {
       wait();
     LocalDateTime agora = LocalDateTime.now();
     messages.addElement(agora.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+    System.out.println("Mensagem inserida na lista de mensagens");
+    System.out.println("Tamanho da lista de mensagens = " + messages.size());
     notify();
   }
 

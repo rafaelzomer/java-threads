@@ -12,6 +12,7 @@ public class ThreadRecebeMensagens extends Thread {
     try {
       while (true) {
         String message = threadMandaMensagens.pegaPrimeiraMensagem();
+        System.out.println("------------------------------");
         System.out.println("Mensagem recebida: " + message);
         sleep(2000);
       }
